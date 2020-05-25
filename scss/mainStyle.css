@@ -13,7 +13,7 @@ html {
   z-index: 10;
   top: 0;
   right: 0;
-  background-color: #001a33;
+  background-color: #003333;
   overflow-x: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -59,22 +59,28 @@ html {
 }
 
 .home-top {
-  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
   width: 100%;
   height: 70px;
-  background-color: #3385ff;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  background-color: #0088cc;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -82,7 +88,7 @@ html {
 .has-search .form-control {
   padding-left: 2.375rem;
   margin-top: 1rem;
-  background-color: #3385ff;
+  background-color: #0088cc;
   border: none;
   color: #ffff;
   font-size: 20px;
@@ -113,47 +119,112 @@ html {
   text-align: right;
 }
 
-#dropdownMenuButton {
-  background-color: #001a33;
-  color: white;
+.dropdown-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: relative;
+  width: 200px;
+  padding: 0 10px 0 10px;
+  margin: auto;
+  background-color: #003333;
+  color: #ffff;
+  font-size: 18px;
+  border-radius: 0.5rem;
+  border: 1px solid #003333;
+}
+
+.dropdown-items {
+  display: none;
+  position: absolute;
+  top: 42px;
+  left: 0;
+  background-color: white;
+  color: #003333;
+  width: 200px;
+  margin: auto;
+  z-index: 1;
+  border: 1px solid #003333;
+  border-radius: 0.5rem;
+}
+
+.openDropDown {
+  display: block;
+}
+
+.dropdown-icon-down {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.dropdown-items li {
+  padding: 8px;
+  list-style-type: none;
+  text-align: center;
 }
 
 .choose-sex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .sex {
-  padding: 10px;
+  padding: 5px 20px 5px 20px;
   background-color: #ffff;
   border: none;
 }
 
 .selected-sex {
-  border: 2px ridge #001a33;
+  border: 2px solid #0088cc;
   border-radius: 1rem;
 }
 
 .sexuality {
-  border-bottom: 2px ridge #3385ff;
+  border-bottom: 2px ridge #0088cc;
 }
 
 .doctors {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .doctor {
@@ -165,7 +236,7 @@ html {
   height: 100px;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 2px solid #3385ff;
+  border: 2px solid #0088cc;
   border-radius: 1rem;
 }
 
@@ -175,25 +246,27 @@ html {
 }
 
 .nav-bottom {
-  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: left;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: relative;
   bottom: 0;
   left: 0;
   width: 100%;
+  text-align: left;
   height: 70px;
-  background-color: #3385ff;
+  background-color: #0088cc;
 }
 
 .nav-link {
@@ -201,6 +274,42 @@ html {
 }
 
 .active {
-  color: #001a33;
+  color: #003333;
+}
+
+.home-header {
+  position: relative;
+  top: 70px;
+  background: url("https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: -43px -26px;
+  height: 150px;
+  width: 100%;
+}
+
+.dark-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: absolute;
+  top: 0;
+  height: 150px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffff;
+  font-size: 2.2rem;
 }
 /*# sourceMappingURL=mainStyle.css.map */

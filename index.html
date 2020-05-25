@@ -28,7 +28,6 @@
 
   <!-- Sidenav -->
   <nav id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <span id="brand">
       <i class="far fa-heart fa-7x"></i>
       <a href="#" style="text-align: center;">MEDYCALL</a>
@@ -38,21 +37,34 @@
     <a href="#">راهنمای استفاده</a>
   </nav>
 
+  <!-- page header -->
+  <header>
+    <div class="home-header">
+      <div class="dark-overlay">
+        <span>انتخاب پزشک</span>
+      </div>
+    </div>
+  </header>
+
   <section id="home">
     <div class="container">
-      <!-- choose Speciality -->
+      <!-- choose doctor -->
       <div class="expertism">
         <h2>تخصص مورد نظر خود را انتخاب کنید</h2>
-        <div class="dropdown text-center mt-4">
-          <button class="btn dropdown-toggle w-50" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            تخصص
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" onclick="selectExp(event)">
-            <button value="general" class="dropdown-item" href="#">پزشک عمومی</button>
-            <button value="expert" class="dropdown-item" href="#">پزشک متخصص</button>
+          <div class="dropdown-button mt-4" onclick="openDropDown(event)">
+            <span style="font-size: 25px;">
+              <i class="fas fa-chevron-down"></i>
+            </span>
+            <span class="exp-name">تخصص</span> 
+            <div class="dropdown-items">
+              <li data-value="general">پزشک عمومی</li>
+              <li data-value="dentist">دندانپزشک</li>
+              <li data-value="brain">مغز و اعصاب</li>
+              <li data-value="skin">پوست و مو</li>
+            </div>
           </div>
-        </div>
       </div>
+
       <!-- choose sexuality -->
       <div class="sexuality my-5">
         <h3>جنسیت پزشک مورد نظر را انتخاب کنید</h3>
@@ -62,36 +74,38 @@
           <button class="sex" value="female">زن</button>
         </div>
       </div>
+
       <!-- doctors -->
       <div class="doctors my-5">
         <div class="doctor">
-          <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+          <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="عکس دکتر">
           <p>دکتر سیروس افشار</p>
         </div>
         <div class="doctor">
-          <img src="https://images.unsplash.com/photo-1585842378054-ee2e52f94ba2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+          <img src="https://images.unsplash.com/photo-1585842378054-ee2e52f94ba2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="عکس دکتر">
           <p>دکتر سیروس افشار</p>
         </div>
         <div class="doctor">
-          <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+          <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="عکس دکتر">
           <p>دکتر سیروس افشار</p>
         </div>
         <div class="doctor">
-          <img src="https://images.unsplash.com/photo-1585842378054-ee2e52f94ba2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+          <img src="https://images.unsplash.com/photo-1585842378054-ee2e52f94ba2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="عکس دکتر">
           <p>دکتر سیروس افشار</p>
         </div>
         <div class="doctor">
-          <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+          <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="عکس دکتر">
           <p>دکتر سیروس افشار</p>
         </div>
         <div class="doctor">
-          <img src="https://images.unsplash.com/photo-1585842378054-ee2e52f94ba2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+          <img src="https://images.unsplash.com/photo-1585842378054-ee2e52f94ba2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="عکس دکتر">
           <p>دکتر سیروس افشار</p>
         </div>
-        <a class="btn btn-primary" href="#">مشاهده بیشتر</a>
+        <a class="btn btn-outline-primary" href="#"><i class="fas fa-angle-left"></i> مشاهده بیشتر</a>
       </div>
     </div>
-          <!-- nav bottom -->
+
+    <!-- nav bottom -->
     <div class="nav-bottom">
       <a class="nav-link active" href="#">خانه</a>
       <a class="nav-link" href="#">گفتگو ها</a>

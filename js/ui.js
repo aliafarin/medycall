@@ -2,9 +2,14 @@ function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
 }
 
-function closeNav() {
+// close sideBar
+$("#home").on('click', function() {
   document.getElementById("mySidenav").style.width = "0";
-}
+})
+
+$("header").on('click', function() {
+  document.getElementById("mySidenav").style.width = "0";
+})
 
 function chooseSex(e) {
   if( e.target.value ) {
@@ -13,7 +18,11 @@ function chooseSex(e) {
   }
 }
 
-function selectExp(e) {
-  let expertism = $(e.target).text();
-  $("#dropdownMenuButton").text(expertism);
+function openDropDown(e) {
+  $(".dropdown-items").toggleClass("openDropDown");
+  $(".dropdown-button i").toggleClass('dropdown-icon-down');
+  if(e.target.dataset.value) {
+    let expName = $(e.target).text();
+    $(".exp-name").text(expName);
+  }
 }
