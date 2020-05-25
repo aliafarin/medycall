@@ -85,29 +85,13 @@ html {
   transition: all 0.5s ease;
 }
 
-.has-search .form-control {
-  padding-left: 2.375rem;
-  margin-top: 1rem;
+.home-top input {
+  display: none;
   background-color: #0088cc;
-  border: none;
-  color: #ffff;
-  font-size: 20px;
 }
 
 .home-top input:focus {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.has-search .form-control-feedback {
-  position: absolute;
-  display: block;
-  width: 2rem;
-  height: 2.375rem;
-  line-height: 2.375rem;
-  text-align: center;
-  pointer-events: none;
-  color: #ffff;
-  margin-top: 1rem;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 #home {
@@ -158,6 +142,14 @@ html {
   z-index: 1;
   border: 1px solid #003333;
   border-radius: 0.5rem;
+}
+
+.dropdown-items li {
+  border-bottom: 1px solid #003333;
+}
+
+.dropdown-items li:last-child {
+  border: none;
 }
 
 .openDropDown {
@@ -228,7 +220,7 @@ html {
 }
 
 .doctor {
-  margin: 10px;
+  margin: 5px;
 }
 
 .doctor img {
@@ -275,41 +267,5 @@ html {
 
 .active {
   color: #003333;
-}
-
-.home-header {
-  position: relative;
-  top: 70px;
-  background: url("https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: -43px -26px;
-  height: 150px;
-  width: 100%;
-}
-
-.dark-overlay {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  position: absolute;
-  top: 0;
-  height: 150px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #ffff;
-  font-size: 2.2rem;
 }
 /*# sourceMappingURL=mainStyle.css.map */

@@ -7,10 +7,6 @@ $("#home").on('click', function() {
   document.getElementById("mySidenav").style.width = "0";
 })
 
-$("header").on('click', function() {
-  document.getElementById("mySidenav").style.width = "0";
-})
-
 function chooseSex(e) {
   if( e.target.value ) {
     $('.selected-sex').removeClass('selected-sex');
@@ -26,3 +22,17 @@ function openDropDown(e) {
     $(".exp-name").text(expName);
   }
 }
+
+function showSearchInput() {
+  $("span.search-icon").css("display", "none");
+  $(".home-top .page-header").css("display", "none");
+  $(".home-top input").css("display", "inline-block");
+}
+
+$("#home").on('click', function() {
+  if($(".home-top input").css('display') !== "none") {
+    $(".home-top input").css('display', 'none');
+    $("span.search-icon").css("display", "block");
+    $(".home-top .page-header").css("display", "block");
+  } 
+})

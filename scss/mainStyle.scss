@@ -68,29 +68,13 @@ html {
   transition: all 0.5s ease;
 }
 
-.has-search .form-control {
-  padding-left: 2.375rem;
-  margin-top: 1rem;
+.home-top input {
+  display: none;
   background-color: $light-blue;
-  border: none;
-  color: $white;
-  font-size: 20px;
 }
 
 .home-top input:focus {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.has-search .form-control-feedback {
-  position: absolute;
-  display: block;
-  width: 2rem;
-  height: 2.375rem;
-  line-height: 2.375rem;
-  text-align: center;
-  pointer-events: none;
-  color: $white;
-  margin-top: 1rem;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 #home {
@@ -127,6 +111,14 @@ html {
   z-index: 1;
   border: 1px solid $dark-green;
   border-radius: 0.5rem;
+}
+
+.dropdown-items li {
+  border-bottom: 1px solid $dark-green;
+}
+
+.dropdown-items li:last-child {
+  border: none;
 }
 
 .openDropDown {
@@ -168,7 +160,7 @@ html {
 }
 
 .doctor {
-  margin: 10px;
+  margin: 5px;
 }
 
 .doctor img {
@@ -201,26 +193,4 @@ html {
 
 .active {
   color: $dark-green;
-}
-
-.home-header {
-  position: relative;
-  top: 70px;
-  background: url("https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: -43px -26px; 
-  height: 150px;
-  width: 100%;
-}
-
-.dark-overlay {
-  @include flexbox(center, center);
-  position: absolute;
-  top: 0;
-  height: 150px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5); 
-  color: $white;
-  font-size: 2.2rem;
 }

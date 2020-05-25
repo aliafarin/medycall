@@ -17,10 +17,11 @@
 <body>
   <!-- home top nav -->
   <div class="home-top">
-    <div class="form-group has-search ml-2">
-      <i class="fas fa-search form-control-feedback"></i>
-      <input type="text" class="form-control w-75">
-    </div>
+    <span style="color: white; font-size: 22px;" class="search-icon pl-2" onclick="showSearchInput()">
+      <i class="fas fa-search"></i>
+    </span>
+    <input class="form-control w-50 ml-3" type="text">
+    <span class="page-header text-light lead">انتخاب پزشک</span>
     <span style="color: white; padding-right: 15px;" onclick="openNav()">
       <i class="fas fa-bars fa-2x"></i>
     </span>
@@ -37,14 +38,6 @@
     <a href="#">راهنمای استفاده</a>
   </nav>
 
-  <!-- page header -->
-  <header>
-    <div class="home-header">
-      <div class="dark-overlay">
-        <span>انتخاب پزشک</span>
-      </div>
-    </div>
-  </header>
 
   <section id="home">
     <div class="container">
